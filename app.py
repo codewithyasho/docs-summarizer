@@ -168,7 +168,7 @@ if st.session_state.pdf_docs:
                     # Retrieve relevant chunks using vector similarity
                     relevant_docs = st.session_state.vectorstore.similarity_search(
                         user_question,
-                        k=4  # Get top 4 most relevant chunks
+                        k=7  # Get top 4 most relevant chunks
                     )
 
                     # Combine relevant chunks
